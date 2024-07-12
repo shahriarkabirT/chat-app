@@ -1,0 +1,6 @@
+
+npm i express dotenv ejs mongoose cookie-parser express-validator jsonwebtoken bc
+rypt http-errors
+
+
+

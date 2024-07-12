@@ -1,0 +1,30 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "nodejs chat application",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon app.js",
+    "prod": "NODE_ENV=production node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahriarkabirT/chat-app.git"
+  },
+  "author": "Shahriar Kabir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahriarkabirT/chat-app/issues"
+  },
+  "homepage": "https://github.com/shahriarkabirT/chat-app#readme",
+  "dependencies": {
+    "bc": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.0"
+  }
+}
