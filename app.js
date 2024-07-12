@@ -8,8 +8,10 @@ const path = require("path");
 
 //internal imports
 const { notFoundHander,errorHandler } = require("./middlewares/errorHandler.js");
-
-
+const loginRouter = require("./routers/loginRouter.js");
+const userRouter = require("./routers/userRouter.js")
+const inboxRouter = require("./routers/inboxRouter.js")
+ 
 const app = express();
 dotenv.config();
 
@@ -30,6 +32,11 @@ app.use(express.static(path.join(__dirname,"public")));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
 //routing 
+app.use('/', loginRouter);
+app.use('/users', userRouter);
+app.use('/inbox', inboxRouter);
+
+
 
 //404 not found handler
 app.use(notFoundHander);
