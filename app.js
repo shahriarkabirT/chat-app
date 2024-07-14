@@ -1,9 +1,9 @@
 //external imports
 const express = require("express");
 const dotenv = require("dotenv");
-const connectDB = require("./config/db.js")
+const connectDB = require("./config/db.js");
 const mongoose  = require("mongoose");
-const cookieParser = require("cookie-parser")
+const cookieParser = require("cookie-parser");
 const path = require("path");
 
 //internal imports
@@ -11,7 +11,7 @@ const { notFoundHander,errorHandler } = require("./middlewares/errorHandler.js")
 const loginRouter = require("./routers/loginRouter.js");
 const userRouter = require("./routers/userRouter.js")
 const inboxRouter = require("./routers/inboxRouter.js")
- 
+
 const app = express();
 dotenv.config();
 
